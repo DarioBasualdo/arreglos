@@ -1,0 +1,10 @@
+D:\Dario_curso\c#_actividad\arreglos\arreglos\bin\Debug\arreglos.exe.config
+D:\Dario_curso\c#_actividad\arreglos\arreglos\bin\Debug\arreglos.exe
+D:\Dario_curso\c#_actividad\arreglos\arreglos\bin\Debug\arreglos.pdb
+D:\Dario_curso\c#_actividad\arreglos\arreglos\obj\Debug\arreglos.csproj.AssemblyReference.cache
+D:\Dario_curso\c#_actividad\arreglos\arreglos\obj\Debug\arreglos.Form1.resources
+D:\Dario_curso\c#_actividad\arreglos\arreglos\obj\Debug\arreglos.Properties.Resources.resources
+D:\Dario_curso\c#_actividad\arreglos\arreglos\obj\Debug\arreglos.csproj.GenerateResource.cache
+D:\Dario_curso\c#_actividad\arreglos\arreglos\obj\Debug\arreglos.csproj.CoreCompileInputs.cache
+D:\Dario_curso\c#_actividad\arreglos\arreglos\obj\Debug\arreglos.exe
+D:\Dario_curso\c#_actividad\arreglos\arreglos\obj\Debug\arreglos.pdb

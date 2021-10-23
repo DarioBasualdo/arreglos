@@ -12,5 +12,19 @@ namespace arreglos.clases
         public int Añonac { get; set; }
 
        
+
+        public bool validar()
+        {
+            bool res = false;
+
+            if (Añonac > 1900 && Añonac <= DateTime.Now.Year)
+            {
+                res = true;
+            }
+
+            return res ;
+        
+        }
+        
         }
 }

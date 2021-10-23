@@ -25,10 +25,19 @@ namespace arreglos
         private void btcargar_Click(object sender, EventArgs e)
 
         {
-            lista.addpersonas(txtlista.Text, txtnac.Text);
-            txtlista.Text = txtnac.Text = lista.vacio();  
-           
             
+
+            if ( !lista.addpersonas(txtlista.Text, txtnac.Text))
+            {
+                lbllista.Text = "Error";
+            }
+            else
+            {
+                lbllista.Text = "Aceptado";
+            }
+            txtlista.Text = txtnac.Text= lista.vacio();
+
+
         }
 
         private void btmostrar_Click(object sender, EventArgs e)
@@ -37,9 +46,15 @@ namespace arreglos
             lbllista.Text = lista.ToString();  
         }
 
+        private void btfiltrar_Click(object sender, EventArgs e)
+        {
 
-       
+           lbllista.Text = lista.ToStringfiltrado(2000)
+            
+          
 
+            
+        }
     }
 
 

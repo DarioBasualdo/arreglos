@@ -36,6 +36,8 @@ namespace arreglos
             this.btmostrar = new System.Windows.Forms.Button();
             this.txtnac = new System.Windows.Forms.TextBox();
             this.lblaño = new System.Windows.Forms.Label();
+            this.btfiltrar = new System.Windows.Forms.Button();
+            this.txtcalfil = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblnombre
@@ -102,11 +104,30 @@ namespace arreglos
             this.lblaño.TabIndex = 4;
             this.lblaño.Text = "año";
             // 
+            // btfiltrar
+            // 
+            this.btfiltrar.Location = new System.Drawing.Point(358, 96);
+            this.btfiltrar.Name = "btfiltrar";
+            this.btfiltrar.Size = new System.Drawing.Size(75, 23);
+            this.btfiltrar.TabIndex = 5;
+            this.btfiltrar.Text = "filtrar";
+            this.btfiltrar.UseVisualStyleBackColor = true;
+            this.btfiltrar.Click += new System.EventHandler(this.btfiltrar_Click);
+            // 
+            // txtcalfil
+            // 
+            this.txtcalfil.Location = new System.Drawing.Point(267, 99);
+            this.txtcalfil.Name = "txtcalfil";
+            this.txtcalfil.Size = new System.Drawing.Size(71, 20);
+            this.txtcalfil.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(491, 363);
+            this.Controls.Add(this.txtcalfil);
+            this.Controls.Add(this.btfiltrar);
             this.Controls.Add(this.txtnac);
             this.Controls.Add(this.lblaño);
             this.Controls.Add(this.btmostrar);
@@ -130,6 +151,8 @@ namespace arreglos
         private System.Windows.Forms.Button btmostrar;
         private System.Windows.Forms.TextBox txtnac;
         private System.Windows.Forms.Label lblaño;
+        private System.Windows.Forms.Button btfiltrar;
+        private System.Windows.Forms.TextBox txtcalfil;
     }
 }
 

@@ -28,20 +28,24 @@ namespace arreglos.clases
 
         }
 
-        public void addpersonas(string nombre , string año) 
+        public bool addpersonas(string nombre, string año)
         {
             persona persona = new persona();
             persona.Nombre = nombre;
             persona.Añonac = System.Convert.ToInt32(año);
-            Redimencionar();
-           Personas[Personas.Length - 1] = persona;
-           
+            bool res = persona.validar();
+            if (res)
+            {
+                Redimencionar();
+                Personas[Personas.Length - 1] = persona;
+            }
+            return res;
 
         }
 
-        public override string ToString() 
+        public override string ToString()
         {
-            string resp ;
+            string resp;
 
             resp = "Lista:\r\n";
             foreach (persona item in Personas)
@@ -50,12 +54,35 @@ namespace arreglos.clases
             }
             return resp;
         }
+        public string ToStringfiltrado(int añomi)
+        {
 
-        public string vacio() 
+            string resp;
+
+
+
+            resp = "Lista:\r\n";
+            foreach (persona item in Personas)
+            {
+                if (item.Añonac >= añomi)
+                {
+                    resp = resp + item.Añonac + "-" + item.Nombre + "\r\n";
+                }
+
+
+            }
+            return resp;
+        }
+
+        public string vacio()
         {
             string limpio = "";
 
             return limpio;
         }
+
+      
+      
+        
     }
 }

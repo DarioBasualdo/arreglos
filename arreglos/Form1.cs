@@ -14,7 +14,7 @@ namespace arreglos
 
     public partial class Form1 : Form
     {
-        public persona[] Personas { get; set; }
+        public listapersonas lista { get; set; } = new listapersonas();
 
         public Form1()
         {
@@ -25,42 +25,20 @@ namespace arreglos
         private void btcargar_Click(object sender, EventArgs e)
 
         {
-            persona persona = new persona();
-            persona.Nombre = txtlista.Text;
-            Redimencionar();
-            Personas[Personas.Length-1] = persona;
-
+            lista.addpersonas(txtlista.Text, txtnac.Text);
+            txtlista.Text = txtnac.Text = lista.vacio();  
+           
+            
         }
 
         private void btmostrar_Click(object sender, EventArgs e)
         {
-            lbllista.Text = "Lista:\r\n";
-            foreach (persona item in Personas)
-            {
-                lbllista.Text = lbllista.Text + item.Nombre + "\r\n";
-            }
-
+         
+            lbllista.Text = lista.ToString();  
         }
 
 
-        private void Redimencionar()
-        {
-            if (Personas==null)
-            {
-                Personas = new persona [1];
-            }
-            else
-            {
-                persona[] aux = new persona[Personas.Length+1];
-                for (int i = 0; i < Personas.Length; i++)
-                {
-                    aux[i] = Personas[i];
-
-                }
-                Personas = aux;
-            }
-
-        }
+       
 
     }
 

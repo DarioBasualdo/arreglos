@@ -34,6 +34,8 @@ namespace arreglos
             this.btcargar = new System.Windows.Forms.Button();
             this.txtlista = new System.Windows.Forms.TextBox();
             this.btmostrar = new System.Windows.Forms.Button();
+            this.txtnac = new System.Windows.Forms.TextBox();
+            this.lblaño = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblnombre
@@ -58,10 +60,10 @@ namespace arreglos
             // 
             // btcargar
             // 
-            this.btcargar.Location = new System.Drawing.Point(310, 55);
+            this.btcargar.Location = new System.Drawing.Point(267, 55);
             this.btcargar.Name = "btcargar";
             this.btcargar.Size = new System.Drawing.Size(75, 23);
-            this.btcargar.TabIndex = 2;
+            this.btcargar.TabIndex = 3;
             this.btcargar.Text = "Cargar";
             this.btcargar.UseVisualStyleBackColor = true;
             this.btcargar.Click += new System.EventHandler(this.btcargar_Click);
@@ -75,19 +77,38 @@ namespace arreglos
             // 
             // btmostrar
             // 
-            this.btmostrar.Location = new System.Drawing.Point(310, 107);
+            this.btmostrar.Location = new System.Drawing.Point(358, 56);
             this.btmostrar.Name = "btmostrar";
             this.btmostrar.Size = new System.Drawing.Size(75, 23);
-            this.btmostrar.TabIndex = 3;
+            this.btmostrar.TabIndex = 4;
             this.btmostrar.Text = "mostrar";
             this.btmostrar.UseVisualStyleBackColor = true;
             this.btmostrar.Click += new System.EventHandler(this.btmostrar_Click);
+            // 
+            // txtnac
+            // 
+            this.txtnac.Location = new System.Drawing.Point(127, 58);
+            this.txtnac.Name = "txtnac";
+            this.txtnac.Size = new System.Drawing.Size(71, 20);
+            this.txtnac.TabIndex = 2;
+            // 
+            // lblaño
+            // 
+            this.lblaño.AutoSize = true;
+            this.lblaño.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblaño.Location = new System.Drawing.Point(129, 35);
+            this.lblaño.Name = "lblaño";
+            this.lblaño.Size = new System.Drawing.Size(36, 20);
+            this.lblaño.TabIndex = 4;
+            this.lblaño.Text = "año";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(470, 363);
+            this.ClientSize = new System.Drawing.Size(491, 363);
+            this.Controls.Add(this.txtnac);
+            this.Controls.Add(this.lblaño);
             this.Controls.Add(this.btmostrar);
             this.Controls.Add(this.txtlista);
             this.Controls.Add(this.btcargar);
@@ -107,6 +128,8 @@ namespace arreglos
         private System.Windows.Forms.Button btcargar;
         private System.Windows.Forms.TextBox txtlista;
         private System.Windows.Forms.Button btmostrar;
+        private System.Windows.Forms.TextBox txtnac;
+        private System.Windows.Forms.Label lblaño;
     }
 }
 

@@ -9,5 +9,8 @@ namespace arreglos.clases
    public class persona
     {
         public string Nombre { get; set; }
-    }
+        public int Añonac { get; set; }
+
+       
+        }
 }

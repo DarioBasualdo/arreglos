@@ -37,7 +37,10 @@ namespace arreglos
             this.txtnac = new System.Windows.Forms.TextBox();
             this.lblaño = new System.Windows.Forms.Label();
             this.btfiltrar = new System.Windows.Forms.Button();
-            this.txtcalfil = new System.Windows.Forms.TextBox();
+            this.txtcodigo = new System.Windows.Forms.TextBox();
+            this.lvlcodigo = new System.Windows.Forms.Label();
+            this.btborrar = new System.Windows.Forms.Button();
+            this.btbuscar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblnombre
@@ -62,7 +65,7 @@ namespace arreglos
             // 
             // btcargar
             // 
-            this.btcargar.Location = new System.Drawing.Point(267, 55);
+            this.btcargar.Location = new System.Drawing.Point(354, 56);
             this.btcargar.Name = "btcargar";
             this.btcargar.Size = new System.Drawing.Size(75, 23);
             this.btcargar.TabIndex = 3;
@@ -79,7 +82,7 @@ namespace arreglos
             // 
             // btmostrar
             // 
-            this.btmostrar.Location = new System.Drawing.Point(358, 56);
+            this.btmostrar.Location = new System.Drawing.Point(435, 56);
             this.btmostrar.Name = "btmostrar";
             this.btmostrar.Size = new System.Drawing.Size(75, 23);
             this.btmostrar.TabIndex = 4;
@@ -106,7 +109,7 @@ namespace arreglos
             // 
             // btfiltrar
             // 
-            this.btfiltrar.Location = new System.Drawing.Point(358, 96);
+            this.btfiltrar.Location = new System.Drawing.Point(354, 105);
             this.btfiltrar.Name = "btfiltrar";
             this.btfiltrar.Size = new System.Drawing.Size(75, 23);
             this.btfiltrar.TabIndex = 5;
@@ -114,19 +117,52 @@ namespace arreglos
             this.btfiltrar.UseVisualStyleBackColor = true;
             this.btfiltrar.Click += new System.EventHandler(this.btfiltrar_Click);
             // 
-            // txtcalfil
+            // txtcodigo
             // 
-            this.txtcalfil.Location = new System.Drawing.Point(267, 99);
-            this.txtcalfil.Name = "txtcalfil";
-            this.txtcalfil.Size = new System.Drawing.Size(71, 20);
-            this.txtcalfil.TabIndex = 6;
+            this.txtcodigo.Location = new System.Drawing.Point(354, 162);
+            this.txtcodigo.Name = "txtcodigo";
+            this.txtcodigo.Size = new System.Drawing.Size(71, 20);
+            this.txtcodigo.TabIndex = 8;
+            // 
+            // lvlcodigo
+            // 
+            this.lvlcodigo.AutoSize = true;
+            this.lvlcodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvlcodigo.Location = new System.Drawing.Point(362, 137);
+            this.lvlcodigo.Name = "lvlcodigo";
+            this.lvlcodigo.Size = new System.Drawing.Size(56, 20);
+            this.lvlcodigo.TabIndex = 9;
+            this.lvlcodigo.Text = "codigo";
+            // 
+            // btborrar
+            // 
+            this.btborrar.Location = new System.Drawing.Point(435, 107);
+            this.btborrar.Name = "btborrar";
+            this.btborrar.Size = new System.Drawing.Size(75, 23);
+            this.btborrar.TabIndex = 10;
+            this.btborrar.Text = "Borrar";
+            this.btborrar.UseVisualStyleBackColor = true;
+            this.btborrar.Click += new System.EventHandler(this.btborrar_Click);
+            // 
+            // btbuscar
+            // 
+            this.btbuscar.Location = new System.Drawing.Point(435, 162);
+            this.btbuscar.Name = "btbuscar";
+            this.btbuscar.Size = new System.Drawing.Size(75, 23);
+            this.btbuscar.TabIndex = 11;
+            this.btbuscar.Text = "Buscar";
+            this.btbuscar.UseVisualStyleBackColor = true;
+            this.btbuscar.Click += new System.EventHandler(this.btbuscar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 363);
-            this.Controls.Add(this.txtcalfil);
+            this.ClientSize = new System.Drawing.Size(683, 363);
+            this.Controls.Add(this.btbuscar);
+            this.Controls.Add(this.btborrar);
+            this.Controls.Add(this.txtcodigo);
+            this.Controls.Add(this.lvlcodigo);
             this.Controls.Add(this.btfiltrar);
             this.Controls.Add(this.txtnac);
             this.Controls.Add(this.lblaño);
@@ -152,7 +188,10 @@ namespace arreglos
         private System.Windows.Forms.TextBox txtnac;
         private System.Windows.Forms.Label lblaño;
         private System.Windows.Forms.Button btfiltrar;
-        private System.Windows.Forms.TextBox txtcalfil;
+        private System.Windows.Forms.TextBox txtcodigo;
+        private System.Windows.Forms.Label lvlcodigo;
+        private System.Windows.Forms.Button btborrar;
+        private System.Windows.Forms.Button btbuscar;
     }
 }
 

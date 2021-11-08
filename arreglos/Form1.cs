@@ -94,6 +94,8 @@ namespace arreglos
             per = new persona();
 
         }
+
+       
     }
 
 

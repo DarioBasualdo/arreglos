@@ -10,6 +10,7 @@ namespace arreglos.clases
     {
         public int ultimocodigo { get; set; } = 0;
         public persona[] Personas { get; set; }
+
         public void Redimencionar()
         {
             if (Personas == null)
